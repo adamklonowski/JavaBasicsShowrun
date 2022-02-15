@@ -2,13 +2,13 @@ package com.example.demo;
 
 public class FibonacciSequence {
 
-    public int fibonacciNumber(int range) {
-        int firstNumber = 0;
-        int secondNumber = 1;
-        int result = 0;
+    public long fibonacciNumber(int range) {
+        long firstNumber = 0;
+        long secondNumber = 1;
+        long result = 0;
 
         if(range < 2) return 0;
-        if(range==2) return 1;
+        if(range == 2) return 1;
 
         for(int i = 0; i<range-2;i++) {
             result = firstNumber+secondNumber;

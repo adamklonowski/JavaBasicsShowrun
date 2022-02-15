@@ -7,14 +7,12 @@ import java.time.LocalDate;
 @RestController
 public class DatePlusDays {
 
-    @GetMapping("/dateCalculator/{daysNumber}")
+    @GetMapping("/date/plus/{daysNumber}")
     @ResponseBody
     public LocalDate getNumberOfDays(@PathVariable int daysNumber) {
 
         LocalDate dateAfterAddingDAys = LocalDate.now().plusDays(daysNumber);
         return dateAfterAddingDAys;
     }
-
-
 
 }
